@@ -1,0 +1,314 @@
+{
+  "assumptions": {
+    "return_cost": 1150,
+    "completed_call_cost": 45,
+    "call_effect": 0.35,
+    "risk_threshold": 0.11180124223602485,
+    "all_selected_calls_completed": true,
+    "incremental_hold_cancellation_rate": 0.12
+  },
+  "policies": {
+    "ship_all": {
+      "orders": 2126,
+      "selected": 0,
+      "selected_pct": 0.0,
+      "selected_returns": 0,
+      "precision": 0,
+      "recall": 0.0,
+      "expected_returns_prevented": 0.0,
+      "call_cost_inr": 0,
+      "avoided_return_cost_inr": 0.0,
+      "net_savings_inr": 0.0,
+      "break_even_effect": null
+    },
+    "call_all": {
+      "orders": 2126,
+      "selected": 2126,
+      "selected_pct": 1.0,
+      "selected_returns": 245,
+      "precision": 0.11523988711194733,
+      "recall": 1.0,
+      "expected_returns_prevented": 85.75,
+      "call_cost_inr": 95670,
+      "avoided_return_cost_inr": 98612.5,
+      "net_savings_inr": 2942.5,
+      "break_even_effect": 0.33955634427684117
+    },
+    "targeted_call": {
+      "orders": 2126,
+      "selected": 589,
+      "selected_pct": 0.2770460959548448,
+      "selected_returns": 141,
+      "precision": 0.23938879456706283,
+      "recall": 0.5755102040816327,
+      "expected_returns_prevented": 49.349999999999994,
+      "call_cost_inr": 26505,
+      "avoided_return_cost_inr": 56752.49999999999,
+      "net_savings_inr": 30247.499999999993,
+      "break_even_effect": 0.16345975948196115
+    }
+  },
+  "fixed_threshold_sensitivity": {
+    "0": {
+      "orders": 2126,
+      "selected": 589,
+      "selected_pct": 0.2770460959548448,
+      "selected_returns": 141,
+      "precision": 0.23938879456706283,
+      "recall": 0.5755102040816327,
+      "expected_returns_prevented": 0,
+      "call_cost_inr": 26505,
+      "avoided_return_cost_inr": 0,
+      "net_savings_inr": -26505,
+      "break_even_effect": 0.16345975948196115
+    },
+    "0.1": {
+      "orders": 2126,
+      "selected": 589,
+      "selected_pct": 0.2770460959548448,
+      "selected_returns": 141,
+      "precision": 0.23938879456706283,
+      "recall": 0.5755102040816327,
+      "expected_returns_prevented": 14.100000000000001,
+      "call_cost_inr": 26505,
+      "avoided_return_cost_inr": 16215.000000000002,
+      "net_savings_inr": -10289.999999999998,
+      "break_even_effect": 0.16345975948196115
+    },
+    "0.2": {
+      "orders": 2126,
+      "selected": 589,
+      "selected_pct": 0.2770460959548448,
+      "selected_returns": 141,
+      "precision": 0.23938879456706283,
+      "recall": 0.5755102040816327,
+      "expected_returns_prevented": 28.200000000000003,
+      "call_cost_inr": 26505,
+      "avoided_return_cost_inr": 32430.000000000004,
+      "net_savings_inr": 5925.000000000004,
+      "break_even_effect": 0.16345975948196115
+    },
+    "0.35": {
+      "orders": 2126,
+      "selected": 589,
+      "selected_pct": 0.2770460959548448,
+      "selected_returns": 141,
+      "precision": 0.23938879456706283,
+      "recall": 0.5755102040816327,
+      "expected_returns_prevented": 49.349999999999994,
+      "call_cost_inr": 26505,
+      "avoided_return_cost_inr": 56752.49999999999,
+      "net_savings_inr": 30247.499999999993,
+      "break_even_effect": 0.16345975948196115
+    },
+    "0.5": {
+      "orders": 2126,
+      "selected": 589,
+      "selected_pct": 0.2770460959548448,
+      "selected_returns": 141,
+      "precision": 0.23938879456706283,
+      "recall": 0.5755102040816327,
+      "expected_returns_prevented": 70.5,
+      "call_cost_inr": 26505,
+      "avoided_return_cost_inr": 81075.0,
+      "net_savings_inr": 54570.0,
+      "break_even_effect": 0.16345975948196115
+    }
+  },
+  "raw_score_sensitivity": {
+    "orders": 2126,
+    "selected": 735,
+    "selected_pct": 0.345719661335842,
+    "selected_returns": 165,
+    "precision": 0.22448979591836735,
+    "recall": 0.673469387755102,
+    "expected_returns_prevented": 57.74999999999999,
+    "call_cost_inr": 33075,
+    "avoided_return_cost_inr": 66412.49999999999,
+    "net_savings_inr": 33337.499999999985,
+    "break_even_effect": 0.1743083003952569
+  },
+  "groups": {
+    "shield_snapshot": {
+      "N": {
+        "orders": 1648,
+        "selected": 445,
+        "selected_pct": 0.2700242718446602,
+        "selected_returns": 87,
+        "precision": 0.19550561797752808,
+        "recall": 0.5918367346938775,
+        "expected_returns_prevented": 30.45,
+        "call_cost_inr": 20025,
+        "avoided_return_cost_inr": 35017.5,
+        "net_savings_inr": 14992.5,
+        "break_even_effect": 0.20014992503748125
+      },
+      "Y": {
+        "orders": 478,
+        "selected": 144,
+        "selected_pct": 0.301255230125523,
+        "selected_returns": 54,
+        "precision": 0.375,
+        "recall": 0.5510204081632653,
+        "expected_returns_prevented": 18.9,
+        "call_cost_inr": 6480,
+        "avoided_return_cost_inr": 21735.0,
+        "net_savings_inr": 15255.0,
+        "break_even_effect": 0.10434782608695652
+      }
+    },
+    "sales_channel": {
+      "app": {
+        "orders": 706,
+        "selected": 193,
+        "selected_pct": 0.273371104815864,
+        "selected_returns": 46,
+        "precision": 0.23834196891191708,
+        "recall": 0.5411764705882353,
+        "expected_returns_prevented": 16.099999999999998,
+        "call_cost_inr": 8685,
+        "avoided_return_cost_inr": 18514.999999999996,
+        "net_savings_inr": 9829.999999999996,
+        "break_even_effect": 0.16417769376181474
+      },
+      "marketplace": {
+        "orders": 569,
+        "selected": 199,
+        "selected_pct": 0.34973637961335674,
+        "selected_returns": 45,
+        "precision": 0.22613065326633167,
+        "recall": 0.6164383561643836,
+        "expected_returns_prevented": 15.749999999999998,
+        "call_cost_inr": 8955,
+        "avoided_return_cost_inr": 18112.499999999996,
+        "net_savings_inr": 9157.499999999996,
+        "break_even_effect": 0.17304347826086958
+      },
+      "partner_outlet": {
+        "orders": 269,
+        "selected": 44,
+        "selected_pct": 0.16356877323420074,
+        "selected_returns": 12,
+        "precision": 0.2727272727272727,
+        "recall": 0.46153846153846156,
+        "expected_returns_prevented": 4.199999999999999,
+        "call_cost_inr": 1980,
+        "avoided_return_cost_inr": 4829.999999999999,
+        "net_savings_inr": 2849.999999999999,
+        "break_even_effect": 0.14347826086956522
+      },
+      "web": {
+        "orders": 582,
+        "selected": 153,
+        "selected_pct": 0.26288659793814434,
+        "selected_returns": 38,
+        "precision": 0.24836601307189543,
+        "recall": 0.6229508196721312,
+        "expected_returns_prevented": 13.299999999999999,
+        "call_cost_inr": 6885,
+        "avoided_return_cost_inr": 15294.999999999998,
+        "net_savings_inr": 8409.999999999998,
+        "break_even_effect": 0.15755148741418765
+      }
+    }
+  },
+  "hold_sensitivity": [
+    {
+      "prevention_among_non_cancelled": 0,
+      "contribution_margin_inr": 300,
+      "expected_cancellations": 70.67999999999999,
+      "avoided_handling_inr": 19457.999999999996,
+      "lost_kept_order_margin_inr": 16128.0,
+      "net_before_hold_admin_and_lifetime_value_inr": 3329.9999999999964
+    },
+    {
+      "prevention_among_non_cancelled": 0,
+      "contribution_margin_inr": 600,
+      "expected_cancellations": 70.67999999999999,
+      "avoided_handling_inr": 19457.999999999996,
+      "lost_kept_order_margin_inr": 32256.0,
+      "net_before_hold_admin_and_lifetime_value_inr": -12798.000000000004
+    },
+    {
+      "prevention_among_non_cancelled": 0,
+      "contribution_margin_inr": 1000,
+      "expected_cancellations": 70.67999999999999,
+      "avoided_handling_inr": 19457.999999999996,
+      "lost_kept_order_margin_inr": 53760.0,
+      "net_before_hold_admin_and_lifetime_value_inr": -34302.0
+    },
+    {
+      "prevention_among_non_cancelled": 0,
+      "contribution_margin_inr": 2000,
+      "expected_cancellations": 70.67999999999999,
+      "avoided_handling_inr": 19457.999999999996,
+      "lost_kept_order_margin_inr": 107520.0,
+      "net_before_hold_admin_and_lifetime_value_inr": -88062.0
+    },
+    {
+      "prevention_among_non_cancelled": 0.1,
+      "contribution_margin_inr": 300,
+      "expected_cancellations": 70.67999999999999,
+      "avoided_handling_inr": 33727.200000000004,
+      "lost_kept_order_margin_inr": 16128.0,
+      "net_before_hold_admin_and_lifetime_value_inr": 17599.200000000004
+    },
+    {
+      "prevention_among_non_cancelled": 0.1,
+      "contribution_margin_inr": 600,
+      "expected_cancellations": 70.67999999999999,
+      "avoided_handling_inr": 33727.200000000004,
+      "lost_kept_order_margin_inr": 32256.0,
+      "net_before_hold_admin_and_lifetime_value_inr": 1471.2000000000044
+    },
+    {
+      "prevention_among_non_cancelled": 0.1,
+      "contribution_margin_inr": 1000,
+      "expected_cancellations": 70.67999999999999,
+      "avoided_handling_inr": 33727.200000000004,
+      "lost_kept_order_margin_inr": 53760.0,
+      "net_before_hold_admin_and_lifetime_value_inr": -20032.799999999996
+    },
+    {
+      "prevention_among_non_cancelled": 0.1,
+      "contribution_margin_inr": 2000,
+      "expected_cancellations": 70.67999999999999,
+      "avoided_handling_inr": 33727.200000000004,
+      "lost_kept_order_margin_inr": 107520.0,
+      "net_before_hold_admin_and_lifetime_value_inr": -73792.79999999999
+    },
+    {
+      "prevention_among_non_cancelled": 0.35,
+      "contribution_margin_inr": 300,
+      "expected_cancellations": 70.67999999999999,
+      "avoided_handling_inr": 69400.2,
+      "lost_kept_order_margin_inr": 16128.0,
+      "net_before_hold_admin_and_lifetime_value_inr": 53272.2
+    },
+    {
+      "prevention_among_non_cancelled": 0.35,
+      "contribution_margin_inr": 600,
+      "expected_cancellations": 70.67999999999999,
+      "avoided_handling_inr": 69400.2,
+      "lost_kept_order_margin_inr": 32256.0,
+      "net_before_hold_admin_and_lifetime_value_inr": 37144.2
+    },
+    {
+      "prevention_among_non_cancelled": 0.35,
+      "contribution_margin_inr": 1000,
+      "expected_cancellations": 70.67999999999999,
+      "avoided_handling_inr": 69400.2,
+      "lost_kept_order_margin_inr": 53760.0,
+      "net_before_hold_admin_and_lifetime_value_inr": 15640.199999999997
+    },
+    {
+      "prevention_among_non_cancelled": 0.35,
+      "contribution_margin_inr": 2000,
+      "expected_cancellations": 70.67999999999999,
+      "avoided_handling_inr": 69400.2,
+      "lost_kept_order_margin_inr": 107520.0,
+      "net_before_hold_admin_and_lifetime_value_inr": -38119.8
+    }
+  ],
+  "baseline_return_handling_inr": 281750
+}

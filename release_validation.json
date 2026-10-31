@@ -1,0 +1,16 @@
+{
+  "tests_passed": 11,
+  "clean_copy_without_original_data_or_training_libraries": "stdlib Python tests passed",
+  "submission_rows": 2096,
+  "unique_ids": 2096,
+  "template_order_matches": true,
+  "max_csv_vs_service_difference": 4.996003610813204e-16,
+  "model_hash_matches_frozen_manifest": true,
+  "all_test_inputs_within_observed_ranges": true,
+  "not_completed": [
+    "actual screen recording",
+    "external submission form",
+    "private repository upload"
+  ],
+  "scope": "Local runnable submission package; no production accuracy guarantee"
+}

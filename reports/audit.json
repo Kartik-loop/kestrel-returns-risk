@@ -1,0 +1,204 @@
+{
+  "source_manifest": {
+    "train": {
+      "filename": "9b5e6f77-f4dc-45d4-a0a8-262137de37ce-train.csv",
+      "sha256": "a44091159828aba1d49922b3139424868a7494e6beea68ea90cd1989c6a4e36a"
+    },
+    "test_unlabelled": {
+      "filename": "45c3e718-f34f-47cc-9501-5953434d0fe4-test_unlabelled.csv",
+      "sha256": "62fe1ffe28d948bf704ca42c707f7b69961bb1bb893fcd09908f9cff7d435aed"
+    },
+    "customers": {
+      "filename": "449d665c-c66b-490d-83c6-cca62a0538e2-customers.csv",
+      "sha256": "a899cf159b3d5692995f2fdc95d52a75e54fb5d2f7c6b2389ea46713fcb39f90"
+    },
+    "products": {
+      "filename": "c9e8afbe-9307-46ff-a798-89bf9b8e3a9c-products.csv",
+      "sha256": "54061906507f971e8676972e23897c4913198e6d6f6fe17e13602abfd2b4c21f"
+    },
+    "sample_submission": {
+      "filename": "7c584dce-6e0a-4157-aa42-95f46b1eb681-sample_submission.csv",
+      "sha256": "f9cd09cda467e639c43b354be14a5556e93b2b8dd47c60de5cb57130aedd41ca"
+    }
+  },
+  "checks": "Reference keys unique; joins complete; no train/test order overlap; submission IDs and order match.",
+  "train": {
+    "raw_rows": 11155,
+    "unique_orders": 10504,
+    "duplicates_removed": 651,
+    "missing": {
+      "order_id": 0,
+      "order_placed_at": 0,
+      "customer_id": 0,
+      "sku": 0,
+      "sales_channel": 0,
+      "payment_mode": 0,
+      "discount_pct": 0,
+      "qty": 0,
+      "order_value_inr": 0,
+      "promised_delivery_days": 0,
+      "delivery_pincode": 0,
+      "is_gift": 0,
+      "customer_prior_orders": 0,
+      "customer_prior_returns": 0,
+      "delivery_note": 2589,
+      "last_service_event_type": 0,
+      "pickup_scheduled_at": 9273,
+      "source": 0,
+      "returned": 0
+    },
+    "date_min": "2025-04-01 00:22",
+    "date_max": "2026-06-30 23:08",
+    "flags": {
+      "amount_divided_by_100": 700,
+      "signup_after_order": 1999,
+      "launch_after_order": 0,
+      "default_pincode": 848,
+      "instruction_like_note": 4
+    },
+    "monthly": {
+      "2025-04": {
+        "orders": 661,
+        "amount_corrections": 0,
+        "returns": 99
+      },
+      "2025-05": {
+        "orders": 674,
+        "amount_corrections": 0,
+        "returns": 81
+      },
+      "2025-06": {
+        "orders": 678,
+        "amount_corrections": 0,
+        "returns": 64
+      },
+      "2025-07": {
+        "orders": 736,
+        "amount_corrections": 0,
+        "returns": 87
+      },
+      "2025-08": {
+        "orders": 714,
+        "amount_corrections": 0,
+        "returns": 92
+      },
+      "2025-09": {
+        "orders": 707,
+        "amount_corrections": 0,
+        "returns": 60
+      },
+      "2025-10": {
+        "orders": 700,
+        "amount_corrections": 700,
+        "returns": 81
+      },
+      "2025-11": {
+        "orders": 698,
+        "amount_corrections": 0,
+        "returns": 74
+      },
+      "2025-12": {
+        "orders": 684,
+        "amount_corrections": 0,
+        "returns": 70
+      },
+      "2026-01": {
+        "orders": 719,
+        "amount_corrections": 0,
+        "returns": 81
+      },
+      "2026-02": {
+        "orders": 664,
+        "amount_corrections": 0,
+        "returns": 85
+      },
+      "2026-03": {
+        "orders": 743,
+        "amount_corrections": 0,
+        "returns": 81
+      },
+      "2026-04": {
+        "orders": 705,
+        "amount_corrections": 0,
+        "returns": 85
+      },
+      "2026-05": {
+        "orders": 722,
+        "amount_corrections": 0,
+        "returns": 83
+      },
+      "2026-06": {
+        "orders": 699,
+        "amount_corrections": 0,
+        "returns": 77
+      }
+    },
+    "service_events": {
+      "NONE": 6536,
+      "DEMO_DONE": 1417,
+      "INSTALL_DONE": 1354,
+      "REVERSE_PICKUP": 750,
+      "TECH_VISIT": 447
+    },
+    "sources": {
+      "crm": 10504
+    },
+    "returns": 1200,
+    "return_rate": 0.11424219345011424
+  },
+  "test_unlabelled": {
+    "raw_rows": 2096,
+    "unique_orders": 2096,
+    "duplicates_removed": 0,
+    "missing": {
+      "order_id": 0,
+      "order_placed_at": 0,
+      "customer_id": 0,
+      "sku": 0,
+      "sales_channel": 0,
+      "payment_mode": 0,
+      "discount_pct": 0,
+      "qty": 0,
+      "order_value_inr": 0,
+      "promised_delivery_days": 0,
+      "delivery_pincode": 0,
+      "is_gift": 0,
+      "customer_prior_orders": 0,
+      "customer_prior_returns": 0,
+      "delivery_note": 538,
+      "last_service_event_type": 0,
+      "pickup_scheduled_at": 2096,
+      "source": 0
+    },
+    "date_min": "2026-07-01 00:51",
+    "date_max": "2026-09-30 23:46",
+    "flags": {
+      "amount_divided_by_100": 0,
+      "signup_after_order": 18,
+      "launch_after_order": 0,
+      "default_pincode": 176,
+      "instruction_like_note": 0
+    },
+    "monthly": {
+      "2026-07": {
+        "orders": 668,
+        "amount_corrections": 0
+      },
+      "2026-08": {
+        "orders": 733,
+        "amount_corrections": 0
+      },
+      "2026-09": {
+        "orders": 695,
+        "amount_corrections": 0
+      }
+    },
+    "service_events": {
+      "NONE": 1553,
+      "INSTALL_BOOKED": 543
+    },
+    "sources": {
+      "crm": 2096
+    }
+  }
+}

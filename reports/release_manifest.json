@@ -1,0 +1,14 @@
+{
+  "model_version": "kestrel-history-v2",
+  "orders": 2096,
+  "columns": [
+    "order_id",
+    "score"
+  ],
+  "model_sha256": "88e09e44acc413d839c6b53dfddc4fa24ce16bd020706384bc80c124d22d7b31",
+  "predictions_sha256": "49dcec785a23a0f8602d2ff0199b7474778861876d930830ae11944ac581c1f2",
+  "input_sha256": "62fe1ffe28d948bf704ca42c707f7b69961bb1bb893fcd09908f9cff7d435aed",
+  "template_sha256": "f9cd09cda467e639c43b354be14a5556e93b2b8dd47c60de5cb57130aedd41ca",
+  "manual_review_rule": "customer_prior_orders > 10; other valid out-of-range values scored provisionally",
+  "model_changed": false
+}

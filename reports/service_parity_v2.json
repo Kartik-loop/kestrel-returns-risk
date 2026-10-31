@@ -1,0 +1,12 @@
+{
+  "train": {
+    "n": 10504,
+    "max_difference": 2.220446049250313e-16,
+    "manual_review": 2
+  },
+  "test_unlabelled": {
+    "n": 2096,
+    "max_difference": 2.220446049250313e-16,
+    "manual_review": 0
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "train": {
+    "records": 10504,
+    "manual_review": 2,
+    "consistency_checks": "passed"
+  },
+  "test_unlabelled": {
+    "records": 2096,
+    "manual_review": 0,
+    "consistency_checks": "passed"
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "overall": {
+    "all / 0": {
+      "orders": 2118,
+      "returns": 188,
+      "rate": 0.08876298394711993
+    },
+    "all / 1-2": {
+      "orders": 4306,
+      "returns": 431,
+      "rate": 0.10009289363678588
+    },
+    "all / 3-9": {
+      "orders": 1211,
+      "returns": 255,
+      "rate": 0.21056977704376548
+    }
+  },
+  "shield": {
+    "N / 0": {
+      "orders": 1639,
+      "returns": 116,
+      "rate": 0.07077486272117145
+    },
+    "N / 1-2": {
+      "orders": 3357,
+      "returns": 272,
+      "rate": 0.08102472445635985
+    },
+    "N / 3-9": {
+      "orders": 957,
+      "returns": 176,
+      "rate": 0.1839080459770115
+    },
+    "Y / 1-2": {
+      "orders": 949,
+      "returns": 159,
+      "rate": 0.16754478398314016
+    },
+    "Y / 0": {
+      "orders": 479,
+      "returns": 72,
+      "rate": 0.15031315240083507
+    },
+    "Y / 3-9": {
+      "orders": 254,
+      "returns": 79,
+      "rate": 0.3110236220472441
+    }
+  },
+  "family": {
+    "Air Fryer / 0": {
+      "orders": 315,
+      "returns": 37,
+      "rate": 0.11746031746031746
+    },
+    "Ceiling Fan / 0": {
+      "orders": 329,
+      "returns": 16,
+      "rate": 0.0486322188449848
+    },
+    "Room Heater / 1-2": {
+      "orders": 630,
+      "returns": 68,
+      "rate": 0.10793650793650794
+    },
+    "Robot Vacuum / 1-2": {
+      "orders": 624,
+      "returns": 111,
+      "rate": 0.1778846153846154
+    },
+    "Induction Cooktop / 3-9": {
+      "orders": 171,
+      "returns": 26,
+      "rate": 0.15204678362573099
+    },
+    "Robot Vacuum / 0": {
+      "orders": 307,
+      "returns": 47,
+      "rate": 0.15309446254071662
+    },
+    "Mixer Grinder / 1-2": {
+      "orders": 588,
+      "returns": 31,
+      "rate": 0.05272108843537415
+    },
+    "Robot Vacuum / 3-9": {
+      "orders": 196,
+      "returns": 67,
+      "rate": 0.34183673469387754
+    },
+    "Water Purifier / 1-2": {
+      "orders": 628,
+      "returns": 91,
+      "rate": 0.1449044585987261
+    },
+    "Air Fryer / 3-9": {
+      "orders": 179,
+      "returns": 42,
+      "rate": 0.2346368715083799
+    },
+    "Ceiling Fan / 3-9": {
+      "orders": 159,
+      "returns": 23,
+      "rate": 0.14465408805031446
+    },
+    "Mixer Grinder / 0": {
+      "orders": 286,
+      "returns": 14,
+      "rate": 0.04895104895104895
+    },
+    "Ceiling Fan / 1-2": {
+      "orders": 607,
+      "returns": 30,
+      "rate": 0.04942339373970346
+    },
+    "Water Purifier / 3-9": {
+      "orders": 182,
+      "returns": 43,
+      "rate": 0.23626373626373626
+    },
+    "Induction Cooktop / 0": {
+      "orders": 304,
+      "returns": 22,
+      "rate": 0.07236842105263158
+    },
+    "Induction Cooktop / 1-2": {
+      "orders": 605,
+      "returns": 35,
+      "rate": 0.05785123966942149
+    },
+    "Water Purifier / 0": {
+      "orders": 276,
+      "returns": 31,
+      "rate": 0.11231884057971014
+    },
+    "Air Fryer / 1-2": {
+      "orders": 624,
+      "returns": 65,
+      "rate": 0.10416666666666667
+    },
+    "Room Heater / 3-9": {
+      "orders": 161,
+      "returns": 31,
+      "rate": 0.19254658385093168
+    },
+    "Room Heater / 0": {
+      "orders": 301,
+      "returns": 21,
+      "rate": 0.06976744186046512
+    },
+    "Mixer Grinder / 3-9": {
+      "orders": 163,
+      "returns": 23,
+      "rate": 0.1411042944785276
+    }
+  }
+}

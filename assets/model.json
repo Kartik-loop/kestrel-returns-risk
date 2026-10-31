@@ -1,0 +1,352 @@
+{
+  "version": "kestrel-history-v2",
+  "categorical": {
+    "sku": [
+      "KH-AF-01",
+      "KH-AF-02",
+      "KH-AF-03",
+      "KH-CF-01",
+      "KH-CF-02",
+      "KH-CF-03",
+      "KH-IC-01",
+      "KH-IC-02",
+      "KH-IC-03",
+      "KH-MG-01",
+      "KH-MG-02",
+      "KH-MG-03",
+      "KH-RH-01",
+      "KH-RH-02",
+      "KH-RH-03",
+      "KH-RV-01",
+      "KH-RV-02",
+      "KH-RV-03",
+      "KH-WP-01",
+      "KH-WP-02",
+      "KH-WP-03"
+    ],
+    "sales_channel": [
+      "app",
+      "marketplace",
+      "partner_outlet",
+      "web"
+    ],
+    "payment_mode": [
+      "cod",
+      "emi",
+      "prepaid_card",
+      "prepaid_upi"
+    ],
+    "family": [
+      "Air Fryer",
+      "Ceiling Fan",
+      "Induction Cooktop",
+      "Mixer Grinder",
+      "Robot Vacuum",
+      "Room Heater",
+      "Water Purifier"
+    ]
+  },
+  "numeric": [
+    "discount_pct",
+    "qty",
+    "order_value_inr",
+    "promised_delivery_days",
+    "is_gift",
+    "address_missing",
+    "list_price_inr",
+    "product_age_days",
+    "order_month",
+    "order_weekday",
+    "order_hour",
+    "customer_prior_orders",
+    "customer_prior_returns"
+  ],
+  "mean": [
+    10.050294695481336,
+    1.057236411263916,
+    8086.025100196463,
+    5.038244924688932,
+    0.06981008513425016,
+    0.08002619515389653,
+    8521.18991486575,
+    564.0915520628683,
+    6.842436149312377,
+    2.9783889980353635,
+    11.374852652259332,
+    1.3599214145383105,
+    0.1848068107400131
+  ],
+  "scale": [
+    7.105811625159426,
+    0.2322937891755697,
+    7686.511533956169,
+    1.9252852545345591,
+    0.25482668060428626,
+    0.27133374880962924,
+    7681.802357584149,
+    202.35632399439595,
+    3.4281367967932,
+    2.000505312218454,
+    6.935111086150014,
+    1.277016412268652,
+    0.5531640950482378
+  ],
+  "coefficients": [
+    0.08402738572831954,
+    0.11555472170029563,
+    -0.09645539214022274,
+    -0.22901624738260132,
+    -0.326186384197759,
+    0.04575768107362086,
+    -0.1668166684249086,
+    -0.13379079652846712,
+    -0.03899066357524302,
+    0.16584556956476249,
+    0.03417429572215555,
+    -0.607851475244847,
+    0.14408503609269413,
+    0.07668472089445205,
+    -0.12942222164588382,
+    -0.030254353569618773,
+    0.06805844589792254,
+    -0.054983319513885645,
+    -0.14568058943507203,
+    0.19247010497636952,
+    -0.12995915258218532,
+    -0.3227178365866341,
+    0.01974851651830166,
+    -0.5912335568773186,
+    -0.2685464256444518,
+    0.47419616684068033,
+    -0.5134063228434251,
+    -0.4710897029075054,
+    -0.652449443679853,
+    0.10312671528839201,
+    -0.5094449505067368,
+    -0.33959812852862065,
+    -0.4078316099579298,
+    -0.017179227185583686,
+    0.09134753534126301,
+    -0.08316963704088626,
+    0.22825637692179238,
+    -0.035417308433356644,
+    -0.05192811418243195,
+    0.42614847087835667,
+    0.16793518747043096,
+    0.030456519331675154,
+    0.38957004815611573,
+    -0.07705094407846556,
+    -0.0737820898283244,
+    0.048113313016625824,
+    0.015423013060678106,
+    0.028635173944424386,
+    0.5436052088907117
+  ],
+  "intercept": -1.7145142011377887,
+  "calibration_slope": 1.0,
+  "calibration_intercept": 0.0,
+  "products": {
+    "KH-AF-01": {
+      "sku": "KH-AF-01",
+      "family": "Air Fryer",
+      "model_name": "Kestrel Air Fryer Lite",
+      "list_price_inr": "5199",
+      "warranty_months": "12",
+      "launch_date": "2023-11-04"
+    },
+    "KH-AF-02": {
+      "sku": "KH-AF-02",
+      "family": "Air Fryer",
+      "model_name": "Kestrel Air Fryer Pro",
+      "list_price_inr": "6499",
+      "warranty_months": "12",
+      "launch_date": "2023-09-07"
+    },
+    "KH-AF-03": {
+      "sku": "KH-AF-03",
+      "family": "Air Fryer",
+      "model_name": "Kestrel Air Fryer Max",
+      "list_price_inr": "8773",
+      "warranty_months": "12",
+      "launch_date": "2024-02-02"
+    },
+    "KH-MG-01": {
+      "sku": "KH-MG-01",
+      "family": "Mixer Grinder",
+      "model_name": "Kestrel Mixer Grinder Lite",
+      "list_price_inr": "3199",
+      "warranty_months": "24",
+      "launch_date": "2023-05-27"
+    },
+    "KH-MG-02": {
+      "sku": "KH-MG-02",
+      "family": "Mixer Grinder",
+      "model_name": "Kestrel Mixer Grinder Pro",
+      "list_price_inr": "3999",
+      "warranty_months": "24",
+      "launch_date": "2023-09-20"
+    },
+    "KH-MG-03": {
+      "sku": "KH-MG-03",
+      "family": "Mixer Grinder",
+      "model_name": "Kestrel Mixer Grinder Max",
+      "list_price_inr": "5398",
+      "warranty_months": "24",
+      "launch_date": "2024-12-09"
+    },
+    "KH-WP-01": {
+      "sku": "KH-WP-01",
+      "family": "Water Purifier",
+      "model_name": "Kestrel Water Purifier Lite",
+      "list_price_inr": "11999",
+      "warranty_months": "12",
+      "launch_date": "2024-09-03"
+    },
+    "KH-WP-02": {
+      "sku": "KH-WP-02",
+      "family": "Water Purifier",
+      "model_name": "Kestrel Water Purifier Pro",
+      "list_price_inr": "14999",
+      "warranty_months": "12",
+      "launch_date": "2023-11-19"
+    },
+    "KH-WP-03": {
+      "sku": "KH-WP-03",
+      "family": "Water Purifier",
+      "model_name": "Kestrel Water Purifier Max",
+      "list_price_inr": "20248",
+      "warranty_months": "12",
+      "launch_date": "2023-10-16"
+    },
+    "KH-RV-01": {
+      "sku": "KH-RV-01",
+      "family": "Robot Vacuum",
+      "model_name": "Kestrel Robot Vacuum Lite",
+      "list_price_inr": "17599",
+      "warranty_months": "12",
+      "launch_date": "2024-03-06"
+    },
+    "KH-RV-02": {
+      "sku": "KH-RV-02",
+      "family": "Robot Vacuum",
+      "model_name": "Kestrel Robot Vacuum Pro",
+      "list_price_inr": "21999",
+      "warranty_months": "12",
+      "launch_date": "2024-01-27"
+    },
+    "KH-RV-03": {
+      "sku": "KH-RV-03",
+      "family": "Robot Vacuum",
+      "model_name": "Kestrel Robot Vacuum Max",
+      "list_price_inr": "29698",
+      "warranty_months": "12",
+      "launch_date": "2023-10-26"
+    },
+    "KH-IC-01": {
+      "sku": "KH-IC-01",
+      "family": "Induction Cooktop",
+      "model_name": "Kestrel Induction Cooktop Lite",
+      "list_price_inr": "2399",
+      "warranty_months": "12",
+      "launch_date": "2024-05-16"
+    },
+    "KH-IC-02": {
+      "sku": "KH-IC-02",
+      "family": "Induction Cooktop",
+      "model_name": "Kestrel Induction Cooktop Pro",
+      "list_price_inr": "2999",
+      "warranty_months": "12",
+      "launch_date": "2023-11-09"
+    },
+    "KH-IC-03": {
+      "sku": "KH-IC-03",
+      "family": "Induction Cooktop",
+      "model_name": "Kestrel Induction Cooktop Max",
+      "list_price_inr": "4048",
+      "warranty_months": "12",
+      "launch_date": "2025-01-28"
+    },
+    "KH-CF-01": {
+      "sku": "KH-CF-01",
+      "family": "Ceiling Fan",
+      "model_name": "Kestrel Ceiling Fan Lite",
+      "list_price_inr": "2799",
+      "warranty_months": "24",
+      "launch_date": "2024-09-27"
+    },
+    "KH-CF-02": {
+      "sku": "KH-CF-02",
+      "family": "Ceiling Fan",
+      "model_name": "Kestrel Ceiling Fan Pro",
+      "list_price_inr": "3499",
+      "warranty_months": "24",
+      "launch_date": "2023-10-15"
+    },
+    "KH-CF-03": {
+      "sku": "KH-CF-03",
+      "family": "Ceiling Fan",
+      "model_name": "Kestrel Ceiling Fan Max",
+      "list_price_inr": "4723",
+      "warranty_months": "24",
+      "launch_date": "2024-10-12"
+    },
+    "KH-RH-01": {
+      "sku": "KH-RH-01",
+      "family": "Room Heater",
+      "model_name": "Kestrel Room Heater Lite",
+      "list_price_inr": "1999",
+      "warranty_months": "12",
+      "launch_date": "2023-07-29"
+    },
+    "KH-RH-02": {
+      "sku": "KH-RH-02",
+      "family": "Room Heater",
+      "model_name": "Kestrel Room Heater Pro",
+      "list_price_inr": "2499",
+      "warranty_months": "12",
+      "launch_date": "2024-02-21"
+    },
+    "KH-RH-03": {
+      "sku": "KH-RH-03",
+      "family": "Room Heater",
+      "model_name": "Kestrel Room Heater Max",
+      "list_price_inr": "3373",
+      "warranty_months": "12",
+      "launch_date": "2024-12-23"
+    }
+  },
+  "provenance": {
+    "training_end": "2026-02-28",
+    "calibration": "none; raw probability",
+    "holdout_status": "exposed diagnostic only"
+  },
+  "history_variant": "counts_only",
+  "smoothing_prior": 0.11447282252783235,
+  "smoothing_strength": 5,
+  "input_ranges": {
+    "customer_prior_orders": [
+      0.0,
+      9.0
+    ],
+    "customer_prior_returns": [
+      0.0,
+      6.0
+    ],
+    "discount_pct": [
+      0.0,
+      60.0
+    ],
+    "qty": [
+      1.0,
+      2.0
+    ],
+    "order_value_inr": [
+      879.56,
+      58802.04
+    ],
+    "promised_delivery_days": [
+      1.0,
+      12.0
+    ]
+  }
+}

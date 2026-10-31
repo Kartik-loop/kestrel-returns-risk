@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "original": [
+      "customer_prior_orders",
+      "customer_prior_returns",
+      "prior_return_rate",
+      "no_prior_orders"
+    ],
+    "counts_only": [
+      "customer_prior_orders",
+      "customer_prior_returns"
+    ],
+    "rate_only": [
+      "prior_return_rate",
+      "no_prior_orders"
+    ],
+    "smoothed_rate": [
+      "smoothed_return_rate",
+      "no_prior_orders"
+    ],
+    "smoothed_success": [
+      "smoothed_return_rate",
+      "log_successful_orders",
+      "no_prior_orders"
+    ]
+  },
+  "folds": [
+    [
+      "2025-07-01",
+      "2025-08-01",
+      "2025-09-01"
+    ],
+    [
+      "2025-09-01",
+      "2025-10-01",
+      "2025-11-01"
+    ],
+    [
+      "2025-11-01",
+      "2025-12-01",
+      "2026-01-01"
+    ],
+    [
+      "2026-01-01",
+      "2026-02-01",
+      "2026-03-01"
+    ]
+  ],
+  "smoothing_strength": 5,
+  "selection": "Lowest pooled development log loss. No holdout selection. Raw probabilities fixed for all candidates; no calibration refit.",
+  "holdout_status": "April-June already exposed; diagnostic only."
+}

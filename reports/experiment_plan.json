@@ -1,0 +1,49 @@
+{
+  "splits": {
+    "fit": {
+      "n": 4170,
+      "start": "2025-04-01 00:22",
+      "end": "2025-09-30 23:42"
+    },
+    "select": {
+      "n": 1382,
+      "start": "2025-11-01 01:27",
+      "end": "2025-12-31 22:33"
+    },
+    "calibrate": {
+      "n": 664,
+      "start": "2026-02-01 00:09",
+      "end": "2026-02-28 23:50"
+    },
+    "holdout": {
+      "n": 2126,
+      "start": "2026-04-01 00:12",
+      "end": "2026-06-30 23:08"
+    }
+  },
+  "selection": "minimum selection-window log loss among fixed candidates; no holdout tuning",
+  "calibration": "fixed sigmoid on February only; evaluate raw and calibrated on holdout, do not switch based on holdout",
+  "maturity_assumption": "One-month buffers are provisional, not proof of complete label maturity.",
+  "features": [
+    "sku",
+    "sales_channel",
+    "payment_mode",
+    "discount_pct",
+    "qty",
+    "order_value_inr",
+    "promised_delivery_days",
+    "is_gift",
+    "customer_prior_orders",
+    "customer_prior_returns",
+    "prior_return_rate",
+    "no_prior_orders",
+    "address_missing",
+    "family",
+    "list_price_inr",
+    "product_age_days",
+    "order_month",
+    "order_weekday",
+    "order_hour"
+  ],
+  "data_sha256": "913f11078aa02b9e6b576b2ce2e285bae386c3057b4b814c8a9b03e03f43c8b2"
+}
