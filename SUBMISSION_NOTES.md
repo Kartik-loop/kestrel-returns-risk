@@ -1,6 +1,6 @@
 # Submission preparation — not a completed external form
 
-The actual form and repository destination have not been supplied. No form has been submitted, repository pushed, or video recorded.
+Private repository: https://github.com/Kartik-loop/kestrel-returns-risk. The actual submission form has not been supplied. No external form has been submitted or video recorded.
 
 ## Expected performance, recorded before external submission
 
@@ -10,7 +10,7 @@ Final v2 development pooled AUC: 0.7664; average precision: 0.3760; log loss: 0.
 
 ## Before sending
 
-- Create a private repository accessible to the authorized evaluators; the data policy prohibits public sharing. Do not publish the original pack.
+- Grant the authorized evaluators access to the private repository; the data policy prohibits public sharing. Do not publish the original pack.
 - Commit the contents of this package, including predictions.csv at repository root. It is not git-ignored.
 - Run README startup and tests.
 - Record the demo using RECORDING_SCRIPT.md, at most three minutes and no slides.
