@@ -1,8 +1,24 @@
 # Kestrel Returns Risk
 
-Minimal submission: a local pre-dispatch return-risk service, employee screen, frozen model, predictions, business memo and evaluation evidence.
+A working application that estimates whether an appliance order will be returned before dispatch. Employees receive a risk estimate, readable model factors, and a suggested next step.
 
-## Run
+**Python 3.10+ · No runtime dependencies · No paid API key · 2,096 submission predictions**
+
+[Evaluation evidence](EVIDENCE.md) · [Business memo](MEMO.md) · [Predictions](predictions.csv) · [Automated tests](https://github.com/Kartik-loop/kestrel-returns-risk/actions/workflows/tests.yml)
+
+> This is a locally runnable evaluation prototype. It does not automatically hold shipments or make calls. The evidence does not establish 95% accuracy.
+
+## How it works
+
+```text
+Order form → JSON endpoint → Input validation → Saved logistic regression model
+                                                     ↓
+                                  Risk + reasons + warnings + recommendation
+```
+
+The interface and batch predictions use the same frozen `kestrel-history-v2` model. No external AI service is called when an order is scored.
+
+## Quick start
 
 Requires Python 3.10 or newer. No packages or paid API key are needed.
 
@@ -19,7 +35,29 @@ From the extracted or cloned repository folder:
 python3 src/server.py
 ```
 
-Open http://127.0.0.1:8000. If the port is occupied, run `python3 src/server.py --port 8080` and open http://127.0.0.1:8080. Keep the terminal running while using the app; stop with Ctrl+C. The port in the browser must match the startup command. `127.0.0.1` refers to your own computer, not a hosted website. Windows users may use `py -3` instead of `python3`.
+Open **http://127.0.0.1:8000/** in your browser. Keep the terminal running while using the app; stop with **Ctrl+C**.
+
+On Windows, use `py -3 src/server.py` if `python3` is unavailable.
+
+### If the page does not open
+
+The browser address must match the port printed in the terminal. For example, to use port 8002:
+
+```sh
+python3 src/server.py --port 8002
+```
+
+Then open **http://127.0.0.1:8002/**.
+
+| Problem | What to do |
+|---|---|
+| Connection refused | Start the server and leave its terminal open; check the port in the address. |
+| Address already in use | Choose another port with `--port`, then open that same port. |
+| Cannot find `src/server.py` | Open a terminal inside the extracted repository folder. |
+| Model unavailable | Ensure `assets/model.json` is present, then restart the server. |
+| Cannot access the repository | Request access from the owner; this is a private engagement repository. |
+
+`127.0.0.1` means your own computer. GitHub stores the project files; it does not host the running Python application. Each evaluator can run their own copy without the author's computer being online.
 
 The local server receives one order at `POST /api/predict` and returns its estimated risk, model factors, warnings and suggested action. The screen calls this endpoint. It performs no calls or automatic dispatch holds, and stores no requests.
 
@@ -33,19 +71,44 @@ The local server receives one order at `POST /api/predict` and returns its estim
 | `EVIDENCE.md`, `reports/` | Current evaluation evidence and release hashes |
 | `tests/test_service.py` | Eleven automated service checks |
 
-The original data pack, customer records, local environments, development logs and obsolete model versions are excluded. This final submission contains inference code. Training scripts, experiments and earlier reports remain available in the repository history at commit `fdf6103`; the final model and predictions are unchanged.
+The original data pack, raw customer records, local environments, development logs and obsolete model versions are excluded. This final submission contains inference code. Training scripts, experiments and earlier reports remain available in the repository history at commit `fdf6103`; the final model and predictions are unchanged.
 
 ## Demonstration
 
-Reset the invented example: about 11.0% risk. Keep three earlier orders and change earlier returns to three: about 46.8%. More than ten earlier orders produces manual review without a score. Other valid inputs outside observed ranges receive provisional scores and no financial estimate.
+1. Reset the form to the invented sample and select **Review return risk**: approximately **11.0%**.
+2. Keep earlier orders at three and change earlier returns to three: approximately **46.8%**, with a confirmation-call suggestion.
+3. Change earlier orders to eleven: manual review, with no risk percentage.
+4. Reset the sample when finished.
+
+These examples demonstrate behavior, not predictive accuracy. Other valid inputs outside observed ranges receive provisional scores and no financial estimate.
 
 Training history reaches only nine earlier orders, and quantities one or two. The above-ten review boundary is a configured operating preference, not a proven accuracy boundary. Newer dates receive a warning. Invalid inputs are rejected.
 
-## Evidence and limitations
+## Results and limitations
+
+| Measure | Result |
+|---|---:|
+| Distinct historical orders | 10,504 |
+| Historical returns | 1,200 (11.42%) |
+| Development ROC AUC | 0.7664 |
+| Diagnostic ROC AUC | 0.7552 |
+| Diagnostic average precision | 0.3725 |
+| Submission orders | 2,096 |
 
 10,504 distinct historical orders included 1,200 returns (11.42%). Logistic regression with counts-only purchase history was selected across four chronological development windows. Development AUC was 0.7664; the already-exposed April–June diagnostic AUC was 0.7552. AUC is not accuracy. These results do not establish 95% accuracy or fresh independent final-test performance.
 
 The call threshold is `45 / (0.35 * 1150)`, approximately 11.18%. The ₹30,545 retrospective savings scenario assumes 35% prevention and applies only to supported inputs. It is not observed intervention savings. See [evidence](EVIDENCE.md) and [memo](MEMO.md).
+
+## Data preparation and model choice
+
+- Reconciled 651 duplicate imports before modelling.
+- Corrected 700 October 2025 amounts only after confirming a 100× unit discrepancy against catalog price, quantity and discount.
+- Excluded post-return pickup/service data and unverified historical customer snapshots.
+- Treated instructions inside customer notes as untrusted data; notes are not predictors.
+- Compared logistic regression with boosted trees, then compared five purchase-history representations across four chronological development windows.
+- Selected the counts-only history representation by development log loss. Its improvement was small; no major accuracy gain is claimed.
+
+The model learns associations from order details. A customer's past return fraction is one description of their history, not the probability of every future order. Displayed reasons are grouped mathematical contributions, not causal explanations or percentage-point changes.
 
 ## JSON endpoint
 
