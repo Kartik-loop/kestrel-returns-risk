@@ -12,4 +12,4 @@ Proposed next step: customer-randomized, supported-input confirmation-call pilot
 
 Known limitations: uncertain return observation horizon and point-in-time labels; unversioned reference data; temporal drift; narrow training ranges; no proven intervention effect by segment; no fully independent v2 final test. Predictions are estimates, not guaranteed outcomes.
 
-The service calculation matches sklearn within floating-point precision across 12,600 supplied records. This is implementation verification, not proof of predictive accuracy. See release_validation.json for package checks.
+The service calculation matches sklearn within floating-point precision across 12,600 supplied records. This is implementation verification, not proof of predictive accuracy. The included tests verify application behavior; they do not establish predictive accuracy.
