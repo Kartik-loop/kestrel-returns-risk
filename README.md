@@ -140,14 +140,4 @@ This uses the same frozen model as the screen and overwrites `predictions.csv` a
 
 Before external submission, the provisional expectation is ROC AUC around 0.75 and average precision around 0.37, anchored to chronological development and the already-exposed diagnostic period. This is not a guarantee or confidence interval. Drift, label maturity and different test prevalence can change performance. The hidden scoring metric has not been specified.
 
-## AI disclosure
 
-Codex assisted with inspection, cleaning, model experiments, implementation, tests and documentation. The user reviewed behavior and prompted the history and manual-review revisions. The application itself uses no LLM or paid model API. Exact assistant subscription or usage charges are unavailable; no per-order model API charge is incurred.
-
-Discarded approaches include post-return predictors, accuracy-only evaluation, automatic holds, redundant history features and alternatives that did not improve the development criterion.
-
-## Submission status and sharing
-
-The actual screen recording (maximum three minutes, no slides) and external submission form remain separate tasks. This repository is not a substitute for either.
-
-This repository remains private under §10 of the supplied operations policy. Grant authorized evaluators repository access before submitting the link. The video and submission form are still outstanding; no video or form completion is claimed.
